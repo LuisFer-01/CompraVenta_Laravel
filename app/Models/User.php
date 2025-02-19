@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'email',
+        'photo',
+        'role_id'
     ];
 
     /**
@@ -42,4 +45,40 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    public function role(){
+        return $this->belongsTo(Role::class);
+    }
+
+    public function products(){
+        return $this->hasMany(Product::class);
+    }
+
+    public function compras(){
+        return $this->hasMany(Compra::class);
+    }
+
+    public function detallecompras(){
+        return $this->hasMany(DetalleCompra::class);
+    }
+
+    public function dishes(){
+        return $this->hasMany(Dish::class);
+    }
+
+    public function ventas(){
+        return $this->hasMany(Venta::class);
+    }
+
+    public function detalleventas(){
+        return $this->hasMany(DetalleVenta::class);
+    }
+
+    public function inventories(){
+        return $this->hasMany(Inventory::class);
+    }
+
+    public function transactions(){
+        return $this->hasMany(Transaction::class);
+    }
 }
