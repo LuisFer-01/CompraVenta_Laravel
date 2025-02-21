@@ -2,6 +2,26 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\MeasureUnitController;
+use App\Http\Controllers\ProductImageController;
+use App\Http\Controllers\CompraController;
+use App\Http\Controllers\DetalleCompraController;
+use App\Http\Controllers\SupplierController;
+use App\Http\Controllers\DishController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\RecipeController;
+use App\Http\Controllers\IngredientController;
+use App\Http\Controllers\DishImageController;
+use App\Http\Controllers\VentaController;
+use App\Http\Controllers\DetalleVentaController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\InventoryController;
+use App\Http\Controllers\TransactionController;
+use App\Http\Controllers\TipoDocumentoController;
 
 /*
 |--------------------------------------------------------------------------

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('dishe_images', function (Blueprint $table) {
+        Schema::create('dish_images', function (Blueprint $table) {
             $table->id();
             $table->foreignId('dish_id')->constrained('dishes')->onDelete('cascade');
             $table->string('image_path');
