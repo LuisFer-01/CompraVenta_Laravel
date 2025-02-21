@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('measure_unit');
+        Schema::dropIfExists('measure_units');
     }
 };

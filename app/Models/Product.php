@@ -43,4 +43,8 @@ class Product extends Model
     public function inventories(){
         return $this->hasMany(Inventory::class);
     }
+
+    public function ingredients(){
+        return $this->hasMany(Ingredient::class);
+    }
 }

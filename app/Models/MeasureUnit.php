@@ -9,12 +9,18 @@ class MeasureUnit extends Model
 {
     use HasFactory;
 
+    protected $table = 'measure_unit';
+
     protected $fillable = [
         'name',
         'description'
     ];
 
-    public function producs(){
+    public function products(){
         return $this->hasMany(Product::class);
+    }
+
+    public function Recipes(){
+        return $this->hasMany(Recipe::class);
     }
 }

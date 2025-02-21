@@ -34,4 +34,8 @@ class Dish extends Model
     public function detalleventas(){
         return $this->hasMany(DetalleVenta::class);
     }
+
+    public function Recipes(){
+        return $this->hasMany(Recipe::class);
+    }
 }
