@@ -35,7 +35,7 @@
                 <!-- App Search-->
                 <form class="app-search d-none d-md-block">
                     <div class="position-relative">
-                        <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                        <input type="text" class="form-control" placeholder="Buscar..." autocomplete="off"
                             id="search-options" value="">
                         <span class="mdi mdi-magnify search-widget-icon"></span>
                         <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
@@ -45,18 +45,18 @@
                         <div data-simplebar style="max-height: 320px;">
                             <!-- item-->
                             <div class="dropdown-header">
-                                <h6 class="text-overflow text-muted mb-0 text-uppercase">Recent Searches</h6>
+                                <h6 class="text-overflow text-muted mb-0 text-uppercase">Busquedas Recientes</h6>
                             </div>
 
                             <div class="dropdown-item bg-transparent text-wrap">
-                                <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">how to setup <i
+                                <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">como configurar <i
                                         class="mdi mdi-magnify ms-1"></i></a>
                                 <a href="index.html" class="btn btn-soft-secondary btn-sm btn-rounded">buttons <i
                                         class="mdi mdi-magnify ms-1"></i></a>
                             </div>
                             <!-- item-->
                             <div class="dropdown-header mt-2">
-                                <h6 class="text-overflow text-muted mb-1 text-uppercase">Pages</h6>
+                                <h6 class="text-overflow text-muted mb-1 text-uppercase">Paginas</h6>
                             </div>
 
                             <!-- item-->
@@ -120,7 +120,7 @@
                         </div>
 
                         <div class="text-center pt-3 pb-1">
-                            <a href="pages-search-results.html" class="btn btn-primary btn-sm">View All Results <i
+                            <a href="pages-search-results.html" class="btn btn-primary btn-sm">Ver todos los Resultados <i
                                     class="ri-arrow-right-line ms-1"></i></a>
                         </div>
                     </div>
@@ -181,11 +181,14 @@
                         </span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
+                        <!-- Encabezado -->
                         <h6 class="dropdown-header">Bienvenido, {{ Auth::user()->name }}!</h6>
+                        <!-- Perfil -->
                         <a class="dropdown-item" href="#">
                             <i class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i>
                             <span class="align-middle">Perfil</span>
                         </a>
+                        <!-- Cerrar Sesión -->
                         <a class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             <i class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i>

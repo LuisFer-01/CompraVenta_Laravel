@@ -13,10 +13,10 @@
         <!-- Light Logo-->
         <a href="index.html" class="logo logo-light">
             <span class="logo-sm">
-                <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="50">
+                <img src="{{ asset('assets/images/logo-sm.png') }}" alt="" height="20">
             </span>
             <span class="logo-lg">
-                <img src="{{ asset('assets/images/logo-light.png') }}" alt="" height="100">
+                <img src="{{ asset('assets/images/logo-light.png') }}" alt="" height="17">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
@@ -39,81 +39,111 @@
                     </a>
                 </li>
 
-                {{-- <li class="menu-title"><span>Mantenimiento</span></li>
+                <li class="menu-title"><span>Mantenimiento</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('categorias.index') }}">
-                        <i class="ri-honour-line"></i> <span>Categoria</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="bx bx-notepad"></i> <span>Categoria</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('products.index') }}">
-                        <i class="ri-honour-line"></i> <span>Producto</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="bx bx-box"></i> <span>Producto</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('customers.index') }}">
-                        <i class="ri-honour-line"></i> <span>Cliente</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-passport-line"></i> <span>Menu</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('suppliers.index') }}">
-                        <i class="ri-honour-line"></i> <span>Proveedor</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="{{-- ri-restaurant-2-line --}}bx bx-bowl-hot"></i> <span>Plato</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('users.index') }}">
-                        <i class="ri-honour-line"></i> <span>Usuario</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class=" {{-- ri-scales-2-line --}}bx bx-receipt"></i> <span>Receta</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#">
+                        <i class="bx bx-baguette"></i> <span>Ingrediente</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-user-5-line"></i> <span>Cliente</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-user-2-line"></i> <span>Proveedor</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#">
+                        <i class="{{-- ri-shield-user-line --}}bx bx-id-card"></i> <span>Usuario</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-shield-user-line"></i> <span>Rol</span>
                     </a>
                 </li>
 
                 <li class="menu-title"><span>Compra</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('compras.index') }}">
-                        <i class="ri-honour-line"></i> <span>Listado Compras</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-git-repository-line"></i> <span>Listado de Compras</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('compras.create') }}">
-                        <i class="ri-honour-line"></i> <span>Nueva Compra</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-shopping-cart-2-line"></i> <span>Nueva Compra</span>
                     </a>
                 </li>
 
                 <li class="menu-title"><span>Ventas</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('ventas.index') }}">
-                        <i class="ri-honour-line"></i> <span>Listado Ventas</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class=" ri-file-list-3-line"></i> <span>Listado de Ventas</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('ventas.create') }}">
-                        <i class="ri-honour-line"></i> <span>Nueva Venta</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-file-edit-line"></i> <span>Nueva Venta</span>
                     </a>
                 </li>
 
                 <li class="menu-title"><span>Inventario</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('inventories.index') }}">
-                        <i class="ri-honour-line"></i> <span>Listado Inventario</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-book-2-line"></i> <span>Listado Inventario</span>
                     </a>
                 </li>
 
                 <li class="menu-title"><span>Transaccion</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ route('transactions.index') }}">
-                        <i class="ri-honour-line"></i> <span>Listado Transaccion</span>
+                    <a class="nav-link menu-link" href="#">
+                        <i class="ri-file-mark-line"></i> <span>Listado Transaccion</span>
                     </a>
-                </li> --}}
+                </li>
 
             </ul>
         </div>
