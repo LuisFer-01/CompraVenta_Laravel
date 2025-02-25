@@ -11,10 +11,18 @@ class Category extends Model
 
     protected $fillable = [
         'name',
-        'description'
+        'description', 
+        'status'
+    ];
+
+    public static $rules = [
+        'name' => 'required|unique:categories|max:255',
+        'description' => 'nullable|string',
+        'status' => 'required|in:active,inactive'
     ];
 
     public function productss(){
         return $this->hasMany(Product::class);
     }
+
 }

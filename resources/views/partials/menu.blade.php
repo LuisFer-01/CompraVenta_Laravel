@@ -42,7 +42,7 @@
                 <li class="menu-title"><span>Mantenimiento</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#">
+                    <a class="nav-link menu-link" href="{{ route('categorias.index')}}">
                         <i class="bx bx-notepad"></i> <span>Categoria</span>
                     </a>
                 </li>

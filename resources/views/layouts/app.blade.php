@@ -1,35 +1,35 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none">
-<head>
-    @include('partials.head')
-</head>
+    <head>
+        @include('partials.head')
+    </head>
 
-<body>
+    <body>
 
-    <!-- Begin page -->
-    <div id="layout-wrapper">
+        <!-- Begin page -->
+        <div id="layout-wrapper">
 
-        @include('partials.header')
+            @include('partials.header')
 
-        @include('partials.menu')
+            @include('partials.menu')
 
-        <div class="vertical-overlay"></div>
+            <div class="vertical-overlay"></div>
 
-        <div class="main-content">
+            <div class="main-content">
 
-            <!-- Page-content -->
-            @yield('content')
-            <!-- End Page-content -->
+                <!-- Page-content -->
+                @yield('content')
+                <!-- End Page-content -->
 
-            @include('partials.footer')
+                @include('partials.footer')
+            </div>
+
         </div>
 
-    </div>
+        @include('partials.top')
 
-    @include('partials.top')
+        @include('partials.js')
 
-    @include('partials.js')
-
-    @stack('scripts')
-</body>
+        @stack('scripts')
+    </body>
 </html>
